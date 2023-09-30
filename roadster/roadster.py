@@ -61,8 +61,11 @@ def time_to_destination(x, route, n):
 
 ### PART 2B ###
 def total_consumption(x, route, n):
-    # REMOVE THE FOLLOWING LINE AND WRITE YOUR SOLUTION
-    raise NotImplementedError('total_consumption not implemented yet!')
+    h = x / n
+    s = np.linspace(0, x, n+1)
+    fs = consumption(velocity(s, route))
+    T = h * (np.sum(fs) - (fs[0] + fs[-1])/2)
+    return T
 
 ### PART 3A ###
 def distance(T, route): 
