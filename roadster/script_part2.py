@@ -16,7 +16,7 @@ def script_2b():
 
 def script_2c():
     route = "speed_anna.npz"
-    x = anna[0][-1]
+    x = r.load_route(route)[0][-1]
     n = 2
     times_to_run = 20
     hvec = np.zeros(times_to_run)  # alla värden på h
@@ -36,11 +36,10 @@ def script_2c():
     plt.legend()
 
 
-
     plt.show()
 
 
 if __name__ == '__main__':
-    #script_2a()
+    script_2a()
     #script_2b()
-    script_2c()
+    #script_2c()

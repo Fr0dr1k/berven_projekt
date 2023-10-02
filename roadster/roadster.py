@@ -68,9 +68,9 @@ def total_consumption(x, route, n):
     return T
 
 ### PART 3A ###
-def distance(T, route): 
+def distance(T, route):
     # REMOVE THE FOLLOWING LINE AND WRITE YOUR SOLUTION
-    raise NotImplementedError('distance not implemented yet!')
+    raise NotImplementedError('reach not implemented yet!')
 
 ### PART 3B ###
 def reach(C, route):
